@@ -70,7 +70,7 @@ public class AccountServiceImpl implements AccountService{
 		account.setBranch(branch);
 		accountRepository.save(account);
 		
-		log.info("Account created successfully with account number: {}",account.getAccountNumber());
+		log.info("Account created successfully with account num: {}",account.getAccountNumber());
 		
 		MimeMessage message = sender.createMimeMessage();
 		MimeMessageHelper helper = new MimeMessageHelper(message, true);
